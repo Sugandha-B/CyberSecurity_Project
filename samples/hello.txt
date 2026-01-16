@@ -1,0 +1,5 @@
+Hello World!
+
+This is a clean test text file.
+Purpose: file upload and scanning tests.
+No malicious content.
