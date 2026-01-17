@@ -1,31 +1,33 @@
 import hashlib
 import json
+import os
 
-# Read hex file
-with open(r"D:\CyberSecurity\samples\test_malware\eicar.hex.txt", "r") as f:
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+HEX_FILE = os.path.join(
+    BASE_DIR, "..", "samples", "test_malware", "eicar.hex.txt"
+)
+
+OUTPUT_JSON = os.path.join(BASE_DIR, "eicar.json")
+
+with open(HEX_FILE, "r") as f:
     hex_data = f.read().strip()
 
-# Convert hex -> raw bytes
 eicar_bytes = bytes.fromhex(hex_data)
 
-# Generate hashes
 hashes = {
-    "md5": hashlib.md5(eicar_bytes).hexdigest(),
-    "sha1": hashlib.sha1(eicar_bytes).hexdigest(),
-    "sha256": hashlib.sha256(eicar_bytes).hexdigest(),
-    
+    "sha256": hashlib.sha256(eicar_bytes).hexdigest()
 }
 
-# Metadata (recommended)
 data = {
     "name": "EICAR-Test-File",
     "type": "test-signature",
-    "length_bytes": len(eicar_bytes),
     "hashes": hashes
 }
 
-# Write JSON
-with open("eicar.json", "w") as f:
+with open(OUTPUT_JSON, "w") as f:
     json.dump(data, f, indent=4)
 
-print("eicar.json generated successfully")
+print("[+] eicar.json generated")
+
+
