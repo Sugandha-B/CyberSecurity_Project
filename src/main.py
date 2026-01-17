@@ -19,3 +19,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# type python -m src.main in the terminal
