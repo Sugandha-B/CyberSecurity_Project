@@ -11,3 +11,17 @@ The task was to create:
 -> Build a file scanning script
 -> Create malware signature list
 -> Detect and report infected files
+
+
+**Future improvements added:
+
+Project Title: AI-Assisted Malware Detection
+Objective: Detect malware using dynamic API call behavior and machine learning.
+Dataset: Dynamic API Call Dataset.
+Algorithm: Random Forest Classifier.
+Performance:
+Accuracy: 98.91%
+Cross-validation Accuracy: 98.95%
+ROC-AUC: 0.9899
+Technologies: Python, Google Colab, Pandas, Scikit-learn, Joblib, Matplotlib.
+How to Run: Steps to install dependencies and execute the notebook.
