@@ -15,7 +15,41 @@ The task was to create:
 
 **Future improvements added:
 
-Project Title: AI-Assisted Malware Detection
+
+#####
+# Behavioral Monitoring Antivirus Module
+
+A lightweight behavior-based antivirus system that monitors system activity in real time to detect and respond to potentially malicious behavior. Instead of relying solely on signature-based detection, this project analyzes process, file, and network activities to identify suspicious behavior.
+
+---
+
+## Features
+
+- **Process Monitoring**
+  - Monitors running processes using `psutil`
+  - Detects suspicious or unauthorized process behavior
+
+- **File System Monitoring**
+  - Watches file system events using `watchdog`
+  - Detects unexpected file creation, modification, deletion, and movement
+
+- **Network Monitoring**
+  - Captures and analyzes network traffic using `scapy`
+  - Identifies suspicious network activity
+
+- **Rule-Based Anomaly Detection**
+  - Applies predefined behavioral rules
+  - Flags potentially malicious activities in real time
+
+- **Automatic Response**
+  - Terminates processes identified as malicious
+  - Helps minimize potential damage
+
+---
+
+**##########**
+
+**#Project Title: AI-Assisted Malware Detection****
 Objective: Detect malware using dynamic API call behavior and machine learning.
 Dataset: Dynamic API Call Dataset.
 Algorithm: Random Forest Classifier.
