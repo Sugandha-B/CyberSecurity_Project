@@ -12,8 +12,8 @@ The task was to create:
 -> Create malware signature list
 -> Detect and report infected files
 
-
-**Future improvements added:
+_
+******Future improvements added:**_**
 
 
 #####
@@ -49,13 +49,64 @@ A lightweight behavior-based antivirus system that monitors system activity in r
 
 **##########**
 
-**#Project Title: AI-Assisted Malware Detection****
-Objective: Detect malware using dynamic API call behavior and machine learning.
-Dataset: Dynamic API Call Dataset.
-Algorithm: Random Forest Classifier.
-Performance:
-Accuracy: 98.91%
-Cross-validation Accuracy: 98.95%
-ROC-AUC: 0.9899
-Technologies: Python, Google Colab, Pandas, Scikit-learn, Joblib, Matplotlib.
-How to Run: Steps to install dependencies and execute the notebook.
+# AI-Assisted Malware Detection
+
+An AI-powered malware detection system that identifies malicious software based on **dynamic API call behavior** using machine learning. The project leverages behavioral analysis instead of traditional signature-based detection, enabling the detection of previously unseen malware patterns.
+
+---
+
+##  Project Objective
+
+The objective of this project is to detect malware by analyzing **dynamic API call sequences** generated during program execution. A **Random Forest Classifier** is trained on behavioral data to accurately distinguish between benign and malicious software.
+
+---
+
+##  Features
+
+- Behavior-based malware detection
+- Dynamic API call analysis
+- Machine learning-based classification
+- High detection accuracy
+- Model persistence using Joblib
+- Performance evaluation using ROC-AUC and cross-validation
+- Data visualization with Matplotlib
+
+---
+
+##  Dataset
+
+**Dataset:** Dynamic API Call Dataset
+
+The dataset contains API call behavior collected during program execution and is labeled as **benign** or **malicious**.
+
+---
+
+##  Machine Learning Algorithm
+
+- **Random Forest Classifier**
+
+The model is trained using Scikit-learn and optimized to classify malware based on runtime API behavior.
+
+---
+
+##  Model Performance
+
+| Metric | Score |
+|---------|-------|
+| Accuracy | **98.91%** |
+| Cross-validation Accuracy | **98.95%** |
+| ROC-AUC Score | **0.9899** |
+
+---
+
+##  Technologies Used
+
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+- Matplotlib
+
+---
